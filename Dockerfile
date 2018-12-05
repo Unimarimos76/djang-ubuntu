@@ -25,4 +25,4 @@ RUN apt-get install -y curl grep sed dpkg && \
     apt-get clean
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
-CMD [ "/bin/bash" ]
+CMD [ "sh","./django.sh" ]
